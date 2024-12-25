@@ -17,7 +17,7 @@
     <title>To Do List</title>
 </head>
 <body>
-    <!-- -->
+<!-- -->
     <!-- Header for our tittle -->
     <header>
         <h1>My ToDoList</h1>
@@ -31,7 +31,25 @@
             <!-- Assign a circle plus image -->
             <i class="fas fa-plus-circle fa-lg"></i>
         </button>
+
+        <!-- Creates a divisor of select class that let choose us between
+        different options (all, completed, incompleted) -->
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incompleted">Incompleted</option>
+            </select>
+        </div>
     </form>
+
+    <!--A divisor with a container  -->
+    <div class="todo-container"> 
+        <ul class="todo-list"></ul>
+    </div>
+
+    <!-- Add the script  to out hmtl file -->
+    <script src="./script.js"></script>
 
 </body>
 </html>
