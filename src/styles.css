@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sets the configuration of the main page, vh -> viewheight, control the
+element sizing based on the screen dimension(is a percentage)*/
+body {
+    background-color: mediumpurple;
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+/* Increases the font size of the header(our tittle right now) 
+1 rem are 16 px*/
+header {
+    font-size: 1.5rem;
+}
+
+/* Now we pick our header and form(formulario with our text and plus button) 
+and set a min height, make it flex to later center the content and align 
+the items to the center*/
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Configuring the form input and button, the padding, font-size, deleting
+the border and putting a whit bgc and creating setting a border-radius
+Paddding is used to create space around an element's content, 
+inside of any defined borders. 
+*/
+form input,
+form button {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: white;
+    border-radius: 2rem;
+}
