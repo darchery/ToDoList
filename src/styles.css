@@ -99,3 +99,97 @@ form button:hover{
     border-radius: 2rem;
 }
 
+.todo li {
+    flex: 1;
+}
+
+/* Set color, border, etc to the trash and complete icon */
+.trash-btn,
+.complete-btn {
+    color:  white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Set a bg color to complete image */
+.complete-btn {
+    background: gold;
+}
+
+/* Establish a borders radius and a bg colour */
+.trash-btn {
+    border-top-right-radius: 1.75rem;
+    border-bottom-left-radius: 1.75rem;
+    background: rgb(171,171,171);
+}
+
+/* Add padding to the items of the ToDoList */
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+/* Non effects to pointing the trash and check icons*/
+.fa-trash,
+.fa-check-circle {
+    pointer-events: none;
+}
+
+/* Set a text decoration to our completed tasks*/
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/*IDK*/
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
+
+/* None to everyone to at least giving a value to them*/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+/* Set a margin, pos, overflow and border to the multi-choose box */
+.select {
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+/* Adjusting the content of the box, colour, w and h, cursor and padding  */
+select {
+    color: gold;
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+/* Add content to the multi-choose box, this 25BC icon, his position, 
+colout, padding, transition, etc*/
+.select::after {
+    /*content: "*";*/
+    content: "\25BC";
+    position: absolute;
+    background: gold;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* No setting the colour when we pass over that after*/
+.select::hover::after {
+    background: white;
+    color: gold;
+}
