@@ -44,3 +44,58 @@ form button {
     background-color: white;
     border-radius: 2rem;
 }
+
+/* Set our colour button and bg, with cursor when we pass over the button
+our cursor will change to a pointer, also add a transition of 0.3 ease and
+added a margin left of 8px  
+*/
+form button {
+    color: gold;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 0.5rem/*or 8px*/;
+
+}
+
+/* When the user interacts with our button(not necessarily cickling on it),
+this is activated when we pass over our mouse over the button */
+form button:hover{
+    color: goldenrod;
+    background-color: whitesmoke;
+}
+
+
+/* Adding margins where are centering our plus logo */
+.fa-plus-circle {
+    margin-top: 0.3;
+    margin-left: -7px;
+}
+
+/* Diplay flex, justifying our content to the center and allinging them */
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Establishing a minimum width between each element */
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+
